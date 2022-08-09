@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% comment %} <link
+    rel="shortcut icon"
+    type="image/png"
+    href=""
+  > {% endcomment %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+  <title>Tupperwhere</title>
+  {% block head %}
+  {% endblock %}
+</head>
+<body>
+  <header>
+    <div class="header-logo-container">
+      {% comment %} <a href="/">
+        <img 
+          src="{% static '' %}"
+          alt=""
+        >
+      </a> {% endcomment %}
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/leftovers">Leftovers</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+</html>
