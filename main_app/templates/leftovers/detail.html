@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/leftovers/leftover-detail.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="leftover-container">
+  <div class="leftover-img">
+    {% comment %} <img 
+      src="{% static 'images/sk8r-boi-cat.svg' %}" 
+      alt="A skater boy cat"
+    > {% endcomment %}
+  </div>
+  <div class="leftover-details">
+    <h1>{{ leftover.name }}</h1>
+    <h2>Expires: {{ leftover.expiration }}</h2>
+    <p>Servings: {{ leftover.servings }}</p>
+    <p>Location: {{ leftover.storage }}</p>
+  </div>
+</section>
+
+{% endblock %}

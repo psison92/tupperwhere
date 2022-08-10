@@ -1,0 +1,58 @@
+.leftover-container {
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftover-img {
+  width: 75%;
+  max-width: 350px;
+}
+
+.usr-img {
+  width: 100%;
+  border-radius: var(--card-border-radius);
+}
+
+.leftover-details {
+  width: 98%;
+}
+
+.leftover-details h1 {
+  font-size: var(--font-xxl);
+  margin: 15px 0 3px;
+}
+
+.leftover-details h2 {
+  font-size: var(--font-xl);
+  margin: 0 0 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.leftover-details h3 {
+  margin: 20px 0 10px;
+  font-size: var(--font-l);
+}
+
+.leftover-details p {
+  font-size: var(--font-reg);
+  margin: 5px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .leftover-container {
+    padding: 35px 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .leftover-img {
+    width: 25%;
+    max-width: 250px;
+    margin-right: 25px;
+  }
+}

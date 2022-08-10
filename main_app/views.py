@@ -15,6 +15,10 @@ def leftovers_index(request):
   leftovers = Leftover.objects.all()
   return render(request, 'leftovers/index.html', { 'leftovers': leftovers})
 
+def leftovers_detail(request, leftover_id):
+  leftover = Leftover.objects.get(id=leftover_id)
+  return render(request, 'leftovers/detail.html', { 'leftover': leftover })
+
 class LeftoverCreate(CreateView):
   model = Leftover
   fields = '__all__'
