@@ -20,6 +20,10 @@
   width: 98%;
 }
 
+.leftover-actions {
+  margin-top: 20px;
+}
+
 .leftover-details h1 {
   font-size: var(--font-xxl);
   margin: 15px 0 3px;

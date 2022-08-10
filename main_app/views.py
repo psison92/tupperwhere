@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 from .models import Leftover
 
@@ -22,4 +22,12 @@ def leftovers_detail(request, leftover_id):
 class LeftoverCreate(CreateView):
   model = Leftover
   fields = '__all__'
+  success_url = '/leftovers/'
+
+class LeftoverUpdate(UpdateView):
+  model = Leftover
+  field = ['name', 'expiration', 'storage', 'servings']
+
+class LeftoverDelete(DeleteView):
+  model = Leftover
   success_url = '/leftovers/'
