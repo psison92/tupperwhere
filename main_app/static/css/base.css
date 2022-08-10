@@ -47,19 +47,25 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   background: var(--nav-bg-ff);
   border-bottom: var(--borders);
+  justify-content: center;
 }
 
 nav {
   margin: 10px;
+  display: flex;
 }
 
 ul {
+  display: flex;
   margin: 0;
   list-style: none;
   padding: 0;
+  justify-content: center;
 }
 
 main {
@@ -245,7 +251,7 @@ nav li {
   }
 
   nav {
-    margin-left: auto;
+    background-color: blueviolet;
   }
 
   .header-logo-container {

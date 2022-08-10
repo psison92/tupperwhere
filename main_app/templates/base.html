@@ -18,19 +18,18 @@
 </head>
 <body>
   <header>
-    <div class="header-logo-container">
-      {% comment %} <a href="/">
-        <img 
-          src="{% static '' %}"
-          alt=""
-        >
-      </a> {% endcomment %}
-    </div>
     <nav>
       <ul>
-        <li><a href="{% url 'leftovers_index' %}">Leftovers</a></li>
-        <li><a href="{% url 'leftovers_create' %}">Add Leftover</a></li>
-        <li><a href="{% url 'about' %}">About</a></li>
+        {% if user.is_authenticated %}
+          <li><a href="{% url 'leftovers_index' %}">Leftovers</a></li>
+          <li><a href="{% url 'leftovers_create' %}">Add Leftover</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'logout' %}">Log Out</a></li>
+        {% else %}
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'home' %}">Log In</a></li>
+          <li><a href="{% url 'signup' %}">Sign Up</a></li>
+        {% endif %}
       </ul>
     </nav>
   </header>
