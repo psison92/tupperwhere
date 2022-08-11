@@ -19,13 +19,13 @@
   {% for leftover in leftovers %}
     <div class="card">
       <a href="{% url 'leftovers_detail' leftover.id %}">
+        <div class="card-img-container">
+          <img 
+            src="{% static 'images/food-container.png' %}" 
+            alt="Food containers"
+          > 
+        </div>
         <div class="card-content">
-          <div class="card-img-container">
-            {% comment %} <img 
-              src="{% static 'images/sk8r-boi-cat.svg' %}" 
-              alt="A skater boy cat"
-            > {% endcomment %}
-          </div>
           <h2 class="card-title">{{ leftover.name }}</h2>
           <p>Expires: {{ leftover.expiration }}</p>
         </div>

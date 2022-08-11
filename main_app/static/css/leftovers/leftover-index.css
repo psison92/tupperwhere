@@ -6,15 +6,19 @@
 }
 
 .card {
+  display: flex;
   width: 275px;
   margin: 10px;
-  border: var(--borders);
-  box-shadow: var(--card-box-shadow);
+  border-radius: 5px;
+  border: #6E6E6E solid 1px;
+  box-shadow: 8px 8px #83BAB9;
+  background-color: #FCF2DD;
 }
 
 .card-content {
   padding: 10px;
   width: 100%;
+  color: #404040;
 }
 
 .usr-img {
