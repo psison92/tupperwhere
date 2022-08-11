@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: #C9C2B0;
+  color: #404040;
   font-family: 'Fugaz One', cursive;
   min-height: 100vh;
   --nav-bg: rgba(104, 197, 248, .7);
@@ -74,6 +75,7 @@ main {
 
 h2 {
   font-size: var(--font-xl);
+  color: #404040;
 }
 
 nav a {
@@ -166,3 +168,31 @@ nav li {
   font-size: var(--font-reg);
 }
 
+@media only screen and (min-width: 360px) {
+  header {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  nav a {
+    font-size: var(--font-l);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    align-items: center;
+  }
+
+  main {
+    max-width: 1300px;
+    min-height: calc(100vh - 53px);
+  }
+
+}
