@@ -23,10 +23,10 @@
     <h2>Expires: {{ leftover.expiration }}</h2>
     <p>Servings: {{ leftover.servings }}</p>
     <p>Location: {{ leftover.storage }}</p>
-  </div>
-  <div class="leftover-actions">
-    <a href="{% url 'leftovers_update' leftover.id %}" class="btn warn">Edit</a>
-    <a href="{% url 'leftovers_delete' leftover.id %}" class="btn danger">Delete</a>
+    <div class="leftover-actions">
+      <a href="{% url 'leftovers_update' leftover.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'leftovers_delete' leftover.id %}" class="btn danger">Delete</a>
+    </div>
   </div>
 </section>
 
