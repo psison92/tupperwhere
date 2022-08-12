@@ -25,6 +25,8 @@ main > section {
 
 .leftover-container {
   width: 80%;
+  display: flex;
+  justify-content: center;
 }
 
 .login {
