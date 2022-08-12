@@ -18,14 +18,14 @@
 
 ## Screenshots
 ### Mobile
-![Landing page](/static/images/mobile-landing.png)
-![Index page](/static/images/mobile-index.png)
-![Create page](/static/images/mobile-create.png)
+![Landing page](main_app/static/images/mobile-landing.png)
+![Index page](main_app/static/images/mobile-index.png)
+![Create page](main_app/static/images/mobile-create.png)
 
 ### Desktop
-![Landing page](/static/images/landing.png)
-![Index page](/static/images/index.png)
-![Create page](/static/images/create.png)
+![Landing page](main_app/static/images/landing.png)
+![Index page](main_app/static/images/index.png)
+![Create page](main_app/static/images/create.png)
 
 ## Attributions
 - [Favicons](https://www.flaticon.com/)
