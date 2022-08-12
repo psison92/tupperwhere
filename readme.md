@@ -3,8 +3,8 @@
 <p>Tupperwhere is a full CRUD application built with Python, Django, and PostgreSQL. Add your leftover foods and set expiration dates. View your list, and edit and delete items. The app also incorporates responsive design, so it's perfect for use on your smartphone or tablet.</p>
 
 ## Getting Started: 
-[Launch Tupperwhere](https://tupperwhere.herokuapp.com/)
-[Planning materials](https://trello.com/b/nSspOshA/tupperwhere)
+- [Launch Tupperwhere](https://tupperwhere.herokuapp.com/)
+- [Planning materials](https://trello.com/b/nSspOshA/tupperwhere)
 
 ## Technologies Used: 
 - HTML
