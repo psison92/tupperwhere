@@ -116,11 +116,10 @@ nav ul {
 .btn {
   font-size: var(--font-l);
   padding: 8px 16px;
+  border: #6E6E6E solid 1px;
   border-radius: 5px;
-  border-width: 2px;
-  border-style: solid;
   text-decoration: none;
-  background-color: var(--button-bg);
+  background-color: #FCF2DD;
   font-weight: 600;
   cursor: pointer;
   font-family: inherit;
@@ -132,8 +131,8 @@ nav ul {
 }
 
 .submit {
-  color: var(--submit);
-  border-color: var(--submit);
+  color: #89A25B;
+  box-shadow: 3px 3px #89A25B;
 }
 
 .secondary {
@@ -142,13 +141,13 @@ nav ul {
 }
 
 .warn {
-  color: var(--warn);
-  border-color: var(--warn);
+  color: #E88B4B;
+  box-shadow: 3px 3px #E88B4B;
 }
 
 .danger {
-  color: var(--danger);
-  border-color: var(--danger);
+  color: #BD432A;
+  box-shadow: 3px 3px #BD432A;
 }
 
 .page-header h1 {
@@ -176,10 +175,6 @@ nav ul {
     width: 100%;
     overflow: hidden;
     justify-content: center;
-  }
-
-  main {
-    margin-bottom: 70px;
   }
 
   nav a {
