@@ -1,7 +1,18 @@
 .form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
+  width: 80%;
+  background-color: #FCF2DD;
+  border: #6E6E6E solid 2px;
+  padding: 30px 10px;
+  box-shadow: 5px 5px 5px gray;
 }
 
 table {
@@ -36,4 +47,44 @@ td > textarea {
 .btn {
   align-self: flex-end;
   margin-right: 40px;
+}
+
+@media only screen and (min-width: 320px) {
+  form {
+    width: 100%;
+  }
+
+  .helptext {
+    font-size: var(--font-sm);
+  }
+  
+
+  table {
+    padding: 0;
+  }
+
+  label, input {
+    font-size: var(--font-reg);
+  }
+
+  .btn {
+    align-self: center;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  form {
+    width: 80%;
+  }
+
+  table {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .helptext {
+    font-size: var(--font-reg);
+  }
 }

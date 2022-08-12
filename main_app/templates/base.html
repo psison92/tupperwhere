@@ -24,10 +24,24 @@
     <nav>
       <ul>
         {% if user.is_authenticated %}
-          <li><a href="{% url 'leftovers_index' %}">Leftovers</a></li>
-          <li><a href="{% url 'leftovers_create' %}">Add Leftover</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'logout' %}">Log Out</a></li>
+          <li>
+            <a href="{% url 'leftovers_index' %}">
+              <img class="nav-icon" src="{% static 'images/index-icon.png' %}" alt="">
+              <span class="nav-text">Leftovers</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'leftovers_create' %}">
+              <img class="nav-icon" src="{% static 'images/add-icon.png' %}" alt="">
+              <span class="nav-text">Add Leftover</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'logout' %}">
+              <img class="nav-icon" src="{% static 'images/logout-icon.png' %}" alt="">
+              <span class="nav-text">Log Out</span>
+            </a>
+          </li>
         {% else %}
           <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="{% url 'home' %}">Log In</a></li>

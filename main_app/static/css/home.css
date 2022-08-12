@@ -73,10 +73,11 @@ main > section {
   }
 
   .login {
-    border: var(--borders);
+    border: #6E6E6E solid 2px;;
     padding: 20px;
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--card-box-shadow);
+    background-color: #FCF2DD;
+    box-shadow: 8px 8px #5AC8BE;
+    border-radius: 5px;
     width: 100%;
   }
 

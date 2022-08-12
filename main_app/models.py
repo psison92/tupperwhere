@@ -10,7 +10,7 @@ LOCATIONS = (
 # Create your models here.
 
 class Leftover(models.Model):
-  name = models.CharField(max_length=50)
+  name = models.CharField(max_length=20)
   expiration = models.DateField()
   storage = models.CharField(
     max_length=1,
@@ -25,4 +25,7 @@ class Leftover(models.Model):
 
   def get_absolute_url(self):
     return reverse("leftovers_detail", kwargs={"leftover_id": self.id})
+
+  class Meta:
+    ordering = ['expiration']
   
